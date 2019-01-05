@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>booking</title>
+	</head>
+	<body>
+		{% for i in obj1 %}
+			<li>ROOM NO:{{ i.room_no}} --- COST: Rs {{i.room_cost}}
+			---- STATUS:{{i.room_status}}</li>
+		{% endfor %}
+		<form method="post" >
+			{% csrf_token %}
+			<label for="i1">Room NO</label>
+			<input type="text" name="roomno" id="i1">
+			
+			<input type="submit" value="save">
+		</form>
+	</body>
+</html>

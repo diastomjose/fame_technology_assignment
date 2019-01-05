@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CREATE ROOMS IN YOUR Hotel</title>
+	</head>
+	<body>
+		<form method="post">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit" value="save">
+		</form>
+	</body>
+</html>

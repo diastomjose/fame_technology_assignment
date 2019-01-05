@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List details</title>
+	</head>
+	<body>
+		{% for i in object_list %}
+			<li>ROOM NO:{{ i.room_no}} --- COST: Rs {{i.room_cost}}
+			---- STATUS:{{i.room_status}}</li>
+		{% endfor %}
+	</body>
+</html>
